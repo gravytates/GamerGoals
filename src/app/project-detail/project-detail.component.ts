@@ -30,11 +30,4 @@ export class ProjectDetailComponent implements OnInit {
     });
     this.projectToDisplay = this.projectService.getProjectById(this.projectId);
   }
-
-  // donateMoney(donateAmount){
-  //   console.log(this.projectToDisplay, donateAmount);
-  // }
-  // <label>Donate to this Project</label>
-  // <input type="number" #donate>
-  // <button (click)="donateMoney(selectedProject, donate.value); donate.value='';">Donate</button>
 }

@@ -1,3 +1,7 @@
 <p>
-  donate-money works!!!1
+  Amount donated to date: $ {{selectedProject.currentAmount}}
 </p>
+
+<label>Donate to this Project</label>
+<input type="number" #donate>
+<button (click)="donateMoney(selectedProject, donate.value); donate.value='';">Donate</button>

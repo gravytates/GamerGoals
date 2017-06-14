@@ -18,4 +18,8 @@ export class DonateMoneyComponent implements OnInit {
   ngOnInit() {
   }
 
+  donateMoney(project, donateAmount){
+    console.log(project, donateAmount);
+  }
+
 }
