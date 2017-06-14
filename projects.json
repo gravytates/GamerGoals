@@ -1,0 +1,38 @@
+{
+  "projects": [{
+    "title": "EveryMan's Sky",
+    "author": "Goodbye Games",
+    "description": "Multiplayer Space game with procedurally generated star systems",
+    "minimumGoal": 50000000,
+    "goalUse": "Build a single player space game and go on vacation",
+    "rewards": "Space sticker",
+    "platform": "PlayStation 4",
+    "genre": "rpg",
+    "image": "pic.jpg",
+    "currentAmount": 1
+  },
+  {
+    "title": "Dank Souls",
+    "author": "To Software",
+    "description": "Punishing single play action rpg",
+    "minimumGoal": 50,
+    "goalUse": "Launch title on PC",
+    "rewards": "Dank sticker",
+    "platform": "PC",
+    "genre": "rpg",
+    "image": "pic.jpg",
+    "currentAmount": 1
+    },
+  {
+    "title": "The Sims 1800",
+    "author": "AE",
+    "description": "Basically AI",
+    "minimumGoal": 1000,
+    "goalUse": "Launch title on PC",
+    "rewards": "Microsoft PC",
+    "platform": "PC",
+    "genre": "Life simulation game",
+    "image": "pic.jpg",
+    "currentAmount": 1
+    }]
+}

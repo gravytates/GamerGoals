@@ -1,3 +1,14 @@
-<p>
-  home works!
-</p>
+<h3>These people want your money! They will give you stuff for money!</h3>
+<div *ngFor="let project of projects | async" class="panel panel-default">
+  <div class="panel-heading">
+    <h3><em>{{project.title}}</em></h3>
+  </div>
+  <div class="panel-body">
+    <img src="{{project.image}}"/><br>
+    <p> By, {{project.author}}</p>
+    Platform: <p>{{project.platform}}</p>
+    <p>{{project.description}}</p>
+    Goal: <p>$ {{project.minimumGoal}}</p>
+    Currently Pledged: <p>$ {{project.currentAmount}}</p>
+  </div>
+</div>
