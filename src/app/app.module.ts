@@ -10,6 +10,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { DonateMoneyComponent } from './donate-money/donate-money.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -22,7 +23,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
+    DonateMoneyComponent
   ],
   imports: [
     BrowserModule,

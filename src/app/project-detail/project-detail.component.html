@@ -12,6 +12,21 @@
       <p>{{(projectToDisplay | async)?.goalUse}}</p>
       <h4>Rewards:</h4>
       <p>{{(projectToDisplay | async)?.rewards}}</p>
+      <!-- COMPONENT HERE -->
+
+        <div *ngFor="let project of projects | async">
+          <div *ngIf="project.$key === (projectToDisplay | async)?.$key">
+            <app-donate-money></app-donate-money>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
     </div>
   </div>
 </div>
