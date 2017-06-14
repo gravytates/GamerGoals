@@ -1,0 +1,81 @@
+<div *ngIf="projectForm" class="new-project">
+  <div class="panel panel-default">
+
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Add New Project to Inventory</h3>
+    </div>
+    <div class="panel-body">
+      <div>
+        <div>
+          <label>Project Title:</label>
+          <br>
+          <input #newTitle>
+        </div>
+
+        <div>
+          <label>Project Author:</label>
+          <br>
+          <input #newAuthor>
+        </div>
+
+        <div>
+          <label>Project Description:</label>
+          <br>
+          <textarea #newDescription></textarea>
+        </div>
+
+        <div>
+          <label>Project Minimum Goal:</label>
+          <br>
+          <input type="number" #newMinimumGoal>
+        </div>
+
+        <div>
+          <label>Project Goal Use:</label>
+          <br>
+          <textarea #newGoalUse></textarea>
+        </div>
+
+        <div>
+          <label>Project Rewards:</label>
+          <br>
+          <input #newRewards>
+        </div>
+
+        <div class="form-group">
+  				<label>Project Platform:</label>
+  				<select class="form-control" #newPlatform>
+  					<option value="PC">PC</option>
+  					<option value="PlayStation">PlayStation</option>
+  					<option value="XBox">X-Box</option>
+  					<option value="Mobile">Mobile</option>
+  				</select>
+  			</div>
+
+        <div class="form-group">
+  				<label>Project Genre:</label>
+  				<select class="form-control" #newGenre>
+  					<option value="rpg">RPG</option>
+  					<option value="Life-simulation">Life Simulation</option>
+  					<option value="shooter">Shooter</option>
+  					<option value="sports">Sports</option>
+  					<option value="platformer">Platformer</option>
+  					<option value="rts">Real Time Strategy</option>
+  				</select>
+  			</div>
+
+        <div>
+          <label>Project Image URL:</label>
+          <br>
+          <input #newImage>
+        </div>
+
+        <button (click)="submitForm(newTitle.value, newAuthor.value, newDescription.value, newMinimumGoal.value, newGoalUse.value, newRewards.value, newPlatform.value, newGenre.value, newImage.value);">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="formButton">
+  <button (click)="showForm()">Add New Project</button>
+</div>

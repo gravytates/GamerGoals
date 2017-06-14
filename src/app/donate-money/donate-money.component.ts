@@ -21,12 +21,7 @@ export class DonateMoneyComponent implements OnInit {
 
   beginDonateMoney(project, donateAmount){
     project.currentAmount += parseInt(donateAmount);
-    console.log(project.currentAmount);
     this.projectService.donateMoney(project);
   }
-
-//   beginUpdatingAlbum(albumToUpdate){
-//   this.albumService.updateAlbum(albumToUpdate);
-// }
 
 }

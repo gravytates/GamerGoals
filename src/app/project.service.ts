@@ -25,14 +25,9 @@ export class ProjectService {
     });
   }
 
-  // updateAlbum(localUpdatedAlbum){
-  //   var albumEntryInFirebase = this.getAlbumById(localUpdatedAlbum.$key);
-  //   albumEntryInFirebase.update({
-  //     title: localUpdatedAlbum.title,
-  //     artist: localUpdatedAlbum.artist,
-  //     description: localUpdatedAlbum.description
-  //   });
-  //
-  // }
+  addProject(newProject: Project){
+    this.projects.push(newProject);
+  }
+
 
 }
