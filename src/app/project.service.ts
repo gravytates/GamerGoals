@@ -17,4 +17,22 @@ export class ProjectService {
   getProjectById(projectId: string){
     return this.database.object('projects/' + projectId);
   }
+
+  donateMoney(localProject){
+    var firebaseProject = this.getProjectById(localProject.$key);
+    firebaseProject.update({
+      currentAmount: localProject.currentAmount
+    });
+  }
+
+  // updateAlbum(localUpdatedAlbum){
+  //   var albumEntryInFirebase = this.getAlbumById(localUpdatedAlbum.$key);
+  //   albumEntryInFirebase.update({
+  //     title: localUpdatedAlbum.title,
+  //     artist: localUpdatedAlbum.artist,
+  //     description: localUpdatedAlbum.description
+  //   });
+  //
+  // }
+
 }

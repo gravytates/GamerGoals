@@ -7,19 +7,26 @@ import { FirebaseListObservable } from 'angularfire2/database';
 @Component({
   selector: 'app-donate-money',
   templateUrl: './donate-money.component.html',
-  styleUrls: ['./donate-money.component.css']
+  styleUrls: ['./donate-money.component.css'],
+  providers: [ProjectService]
 })
 export class DonateMoneyComponent implements OnInit {
   @Input() selectedProject;
   projects: FirebaseListObservable<any[]>
 
-  constructor() {}
+  constructor(private projectService: ProjectService) {}
 
   ngOnInit() {
   }
 
-  donateMoney(project, donateAmount){
-    console.log(project, donateAmount);
+  beginDonateMoney(project, donateAmount){
+    project.currentAmount += parseInt(donateAmount);
+    console.log(project.currentAmount);
+    this.projectService.donateMoney(project);
   }
+
+//   beginUpdatingAlbum(albumToUpdate){
+//   this.albumService.updateAlbum(albumToUpdate);
+// }
 
 }
