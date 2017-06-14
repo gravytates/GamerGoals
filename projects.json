@@ -8,7 +8,7 @@
     "rewards": "Space sticker",
     "platform": "PlayStation 4",
     "genre": "rpg",
-    "image": "pic.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/67/No_Man%27s_Sky.jpg",
     "currentAmount": 1
   },
   {
@@ -20,7 +20,7 @@
     "rewards": "Dank sticker",
     "platform": "PC",
     "genre": "rpg",
-    "image": "pic.jpg",
+    "image": "http://www.doctorshrugs.com/blog/wp-content/uploads/2013/11/DarkSouls.jpg",
     "currentAmount": 1
     },
   {
@@ -32,7 +32,7 @@
     "rewards": "Microsoft PC",
     "platform": "PC",
     "genre": "Life simulation game",
-    "image": "pic.jpg",
+    "image": "https://i.ytimg.com/vi/IPDV0FPmzac/maxresdefault.jpg",
     "currentAmount": 1
     }]
 }

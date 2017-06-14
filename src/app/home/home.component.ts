@@ -19,4 +19,8 @@ export class HomeComponent implements OnInit {
     this.projects = this.projectService.getProjects();
   }
 
+  goToDetail(selectedProject){
+    this.router.navigate(['projects', selectedProject.$key]);
+  }
+
 }
