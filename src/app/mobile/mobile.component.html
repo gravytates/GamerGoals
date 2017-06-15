@@ -1,15 +1,18 @@
 <h1>Mobile Games</h1>
 <app-new-project></app-new-project>
 <br>
-<select class="form-control" (change)="onChange($event.target.value)">
-  <option value="rpg">RPG</option>
-  <option value="Life-simulation">Life Simulation</option>
-  <option value="shooter">Shooter</option>
-  <option value="sports">Sports</option>
-  <option value="platformer">Platformer</option>
-  <option value="rts">Real Time Strategy</option>
-  <option value="all" selected>All Games</option>
-</select>
+<div class="form-group">
+  <label>Sort by Genre:</label>
+  <select class="form-control" (change)="onChange($event.target.value)">
+    <option value="rpg">RPG</option>
+    <option value="Life-simulation">Life Simulation</option>
+    <option value="shooter">Shooter</option>
+    <option value="sports">Sports</option>
+    <option value="platformer">Platformer</option>
+    <option value="rts">Real Time Strategy</option>
+    <option value="all" selected>All Games</option>
+  </select>
+</div>
 <h3>These people want your money! They will give you stuff for money!</h3>
 <div *ngFor="let project of projects | async | platform:filterPlat | genre:filterBy" class="panel panel-default">
   <div (click)="goToDetail(project)" class="panel-heading">

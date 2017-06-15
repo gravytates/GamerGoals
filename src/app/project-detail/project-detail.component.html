@@ -8,12 +8,13 @@
     <div class="goal well">
       <h4>Description:</h4>
       <p>{{(projectToDisplay | async)?.description}}</p>
+
+      <h4>Rewards:</h4>
+      <p>{{(projectToDisplay | async)?.rewards}}</p>
       
       <h4>Minimum Goal:</h4>
       <p>$ {{(projectToDisplay | async)?.minimumGoal}}</p>
 
-      <h4>Rewards:</h4>
-      <p>{{(projectToDisplay | async)?.rewards}}</p>
 
       <div *ngFor="let project of projects | async">
         <div *ngIf="project.$key === (projectToDisplay | async)?.$key">
