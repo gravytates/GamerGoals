@@ -1,7 +1,7 @@
 
 <app-new-project></app-new-project>
 <br>
-<div class="form-group">  
+<div class="form-group">
   <label>Sort by Genre:</label>
   <select class="form-control" (change)="onChange($event.target.value)">
     <option value="rpg">RPG</option>
@@ -15,12 +15,12 @@
 </div>
 <h3>These people want your money! They will give you stuff for money!</h3>
 <div *ngFor="let project of projects | async | genre:filterBy" class="panel panel-default">
-  <div (click)="goToDetail(project)" class="panel-heading">
+  <div (click)="goToDetail(project)" class="panel-heading click">
     <h3><em>{{project.title}}</em></h3>
   </div>
   <div class="panel-body">
     <div class="col-md-6">
-      <img (click)="goToDetail(project)" src="{{project.image}}"/><br>
+      <img class="click" (click)="goToDetail(project)" src="{{project.image}}"/><br>
     </div>
     <div class="col-md-6">
       <h4> By, {{project.author}}</h4>

@@ -1,7 +1,11 @@
-img {
-  height: 300px;
+
+
+
+.panel-heading {
+  background: rgb(245,26,106);
+  color: yellow;
 }
 
-.col-md-6 img {
-  
+.panel {
+  border-radius: 0, 15px, 0, 15px;
 }

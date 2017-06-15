@@ -17,3 +17,16 @@
   float: right;
   padding-bottom: 10px;
 }
+
+.jumbotron {
+  background-color: rgb(112,236,227);
+}
+
+img {
+  border-radius: 30px;
+  width: 75%;
+}
+
+.click {
+   cursor: pointer;
+}

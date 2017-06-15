@@ -2,9 +2,33 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
-## Development server
+## By Grady Shelton and Nicole Santamaria
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## User Stories
+
+* As a user, I want to see a list of all gaming projects that are seeking funding.
+* As a user, I want to click a project to see more details.
+* As a user, I'd like to know the details of a project before I decide whether to fund it. Including things like a name, the project authors, a description, the amount of money the project is hoping to raise, what they'll do with the funds raised, and whether I get any cool rewards for funding a project.
+* As a user, I want to be able to filter projects as I browse them by gaming genre.
+* As a user, I want to click a button or fill out a form to fund a project.
+* As a user, I want the option to post my own project that seeks funding.
+* As an administrator, I want to add, update, or delete projects as necessary. (User authentication is required).
+* As a user, I want to select a platform to view a page containing all projects in that platform.
+
+## Prerequisites
+
+You will need the following things properly installed on your computer.
+
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [AngularCLI](https://cli.angular.io/)
+
+## Installation
+
+* `git clone https://github.com/nrsantamaria/GamerGoals`
+* `cd GamerGoals`
+* `npm install`
+* `bower install bootstrap --save`
 
 ## Firebase Integration
 
@@ -13,28 +37,36 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 * Create a file in the app folder labeled api-keys.ts
 * Add the following to your api-keys file:
 
-`export var masterFirebaseConfig = {
+```
+export var masterFirebaseConfig = {
     apiKey: "xxxx",
     authDomain: "xxxx.firebaseapp.com",
     databaseURL: "https://xxxx.firebaseio.com",
     storageBucket: "xxxx.appspot.com",
     messagingSenderId: "xxxx"
   };
-`
+```
 
-## Build
+## Development server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Running unit tests
+## Useful Tips
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* To review content in atom with TypeScript Package install the following:
+* `apm install atom-typescript`
 
-## Running end-to-end tests
+* If you receive the following error: Error: Can't resolve 'promise-polyfill'
+* Run `npm install promise-polyfill --save-exact`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+* If you get some other weird firebase related error use the following to find out what file is out of date.
+* Run `npm list`
 
-## Further help
+## Support and Contact Details
+* Please contact Nicole Santamaria at NicoleRSantamaria@gmail.com if you have any questions.
+* Please contact Grady Shelton at Gradyish@gmail.com if you have any questions.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## License
+This software is licensed under MIT license.
+
+Copyright (c) 2017 Nicole Santamaria and Grady Shelton
