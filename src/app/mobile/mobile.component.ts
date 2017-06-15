@@ -30,4 +30,6 @@ export class MobileComponent implements OnInit {
   onChange(menuOption) {
     this.filterBy = menuOption;
   }
+
+  filterPlat: string = "Mobile"
 }
