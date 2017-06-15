@@ -1,0 +1,82 @@
+<p>
+  edit-project works!
+</p>
+<div *ngIf="editForm" class="new-project">
+  <h3 class="panel-title">Edit Project Details</h3>
+
+  <div>
+    <label>Project Title:</label>
+    <br>
+    <input [(ngModel)]="selectedProject.title">
+  </div>
+
+  <div>
+    <label>Project Author:</label>
+    <br>
+    <input [(ngModel)]="selectedProject.author">
+  </div>
+
+  <div>
+    <label>Project Description:</label>
+    <br>
+    <textarea [(ngModel)]="selectedProject.description"></textarea>
+  </div>
+
+  <div>
+    <label>Project Minimum Goal:</label>
+    <br>
+    <input type="number" [(ngModel)]="selectedProject.minimumGoal">
+  </div>
+
+  <div>
+    <label>Current Amount Donated:</label>
+    <br>
+    <input type="number" [(ngModel)]="selectedProject.currentAmount">
+  </div>
+
+  <div>
+    <label>Project Goal Use:</label>
+    <br>
+    <textarea [(ngModel)]="selectedProject.goalUse"></textarea>
+  </div>
+
+  <div>
+    <label>Project Rewards:</label>
+    <br>
+    <input [(ngModel)]="selectedProject.rewards">
+  </div>
+
+  <div class="form-group">
+		<label>Project Platform:</label>
+		<select class="form-control" [(ngModel)]="selectedProject.platform">
+			<option value="PC">PC</option>
+			<option value="PlayStation">PlayStation</option>
+			<option value="XBox">X-Box</option>
+			<option value="Mobile">Mobile</option>
+		</select>
+	</div>
+
+  <div class="form-group">
+		<label>Project Genre:</label>
+		<select class="form-control" [(ngModel)]="selectedProject.genre">
+			<option value="rpg">RPG</option>
+			<option value="Life-simulation">Life Simulation</option>
+			<option value="shooter">Shooter</option>
+			<option value="sports">Sports</option>
+			<option value="platformer">Platformer</option>
+			<option value="rts">Real Time Strategy</option>
+		</select>
+	</div>
+
+  <div>
+    <label>Project Image URL:</label>
+    <br>
+    <input [(ngModel)]="selectedProject.image">
+  </div>
+
+
+  <button class="btn btn-success" (click)="beginUpdatingProject(selectedProject)">Edit</button>
+</div>
+<div *ngIf="formButton">
+  <button class="btn btn-default" (click)="showForm()">Edit Project</button>
+</div>

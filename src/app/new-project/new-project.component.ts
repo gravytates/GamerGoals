@@ -29,6 +29,4 @@ export class NewProjectComponent implements OnInit {
     this.formButton = true;
   }
 
-  finishedAdding(){
-  }
 }

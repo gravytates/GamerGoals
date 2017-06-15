@@ -18,6 +18,21 @@ export class ProjectService {
     return this.database.object('projects/' + projectId);
   }
 
+  editProject(anythingProject){
+    var firebaseProjectToEdit = this.getProjectById(anythingProject.$key);
+    firebaseProjectToEdit.update({title: anythingProject.title,
+      author: anythingProject.author,
+      description: anythingProject.description,
+      minimumGoal: anythingProject.minimumGoal,
+      goalUse: anythingProject.goalUse,
+      rewards: anythingProject.rewards,
+      platform: anythingProject.platform,
+      genre: anythingProject.genre,
+      image: anythingProject.image,
+      currentAmount: anythingProject.currentAmount
+    });
+  }
+
   donateMoney(localProject){
     var firebaseProject = this.getProjectById(localProject.$key);
     firebaseProject.update({

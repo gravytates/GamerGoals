@@ -13,4 +13,8 @@
     Goal: <p>$ {{project.minimumGoal}}</p>
     Currently Pledged: <p>$ {{project.currentAmount}}</p>
   </div>
+
+  <div *ngIf="currentRoute === '/admin'">
+    <app-edit-project [selectedProject]="project"></app-edit-project>
+  </div>
 </div>
