@@ -14,6 +14,7 @@ import { DonateMoneyComponent } from './donate-money/donate-money.component';
 import { NewProjectComponent } from './new-project/new-project.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
+import { GenrePipe } from './genre.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     DonateMoneyComponent,
     NewProjectComponent,
     AdminComponent,
-    EditProjectComponent
+    EditProjectComponent,
+    GenrePipe
   ],
   imports: [
     BrowserModule,

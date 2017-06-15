@@ -25,9 +25,6 @@ export class EditProjectComponent implements OnInit {
   }
 
   beginUpdatingProject(project){
-    console.log(project.minimumGoal);
-
-    console.log(project)
     this.projectService.editProject(project);
     this.editForm = null;
     this.formButton = true;

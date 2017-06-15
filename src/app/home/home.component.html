@@ -1,20 +1,32 @@
 <app-new-project></app-new-project>
-
+<select class="form-control" (change)="onChange($event.target.value)">
+  <option value="rpg">RPG</option>
+  <option value="Life-simulation">Life Simulation</option>
+  <option value="shooter">Shooter</option>
+  <option value="sports">Sports</option>
+  <option value="platformer">Platformer</option>
+  <option value="rts">Real Time Strategy</option>
+  <option value="all" selected>All Games</option>
+</select>
 <h3>These people want your money! They will give you stuff for money!</h3>
-<div *ngFor="let project of projects | async" class="panel panel-default">
+<div *ngFor="let project of projects | async | genre:filterBy" class="panel panel-default">
   <div (click)="goToDetail(project)" class="panel-heading">
     <h3><em>{{project.title}}</em></h3>
   </div>
   <div class="panel-body">
-    <img (click)="goToDetail(project)" src="{{project.image}}"/><br>
-    <p> By, {{project.author}}</p>
-    Platform: <p>{{project.platform}}</p>
-    <p>{{project.description}}</p>
-    Goal: <p>$ {{project.minimumGoal}}</p>
-    Currently Pledged: <p>$ {{project.currentAmount}}</p>
+    <div class="col-md-6">
+      <img (click)="goToDetail(project)" src="{{project.image}}"/><br>
+    </div>
+    <div class="col-md-6">
+      <h4> By, {{project.author}}</h4>
+      <h4>Platform:</h4> <p>{{project.platform}}</p>
+      <h4>Snippet:</h4><p>{{project.description}}</p>
+      <h4>Goal:</h4> <p>$ {{project.minimumGoal}}</p>
+      <h4>Currently Pledged:</h4> <p>$ {{project.currentAmount}}</p>
+      <div *ngIf="currentRoute === '/admin'">
+        <app-edit-project [selectedProject]="project"></app-edit-project>
+      </div>
+    </div>
   </div>
 
-  <div *ngIf="currentRoute === '/admin'">
-    <app-edit-project [selectedProject]="project"></app-edit-project>
-  </div>
 </div>

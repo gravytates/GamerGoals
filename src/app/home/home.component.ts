@@ -25,4 +25,9 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['projects', selectedProject.$key]);
   }
 
+  filterBy: string = "all"
+
+  onChange(menuOption) {
+    this.filterBy = menuOption;
+  }
 }
