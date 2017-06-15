@@ -2,7 +2,7 @@
 
 ![screenshot](src/assets/images/screenshot.png)
 
-Visit the site! https://gamer-goals.firebaseapp.com
+[Visit the site!](https://gamer-goals.firebaseapp.com)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
