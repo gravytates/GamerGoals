@@ -2,6 +2,8 @@
 
 ![screenshot](src/assets/images/screenshot.png)
 
+Visit the site! https://gamer-goals.firebaseapp.com
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
 ## By Grady Shelton and Nicole Santamaria
@@ -24,6 +26,7 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [AngularCLI](https://cli.angular.io/)
+* [(src/assets/images/firebase.png)](https://firebase.google.com/)
 
 ## Installation
 

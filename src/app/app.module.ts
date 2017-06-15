@@ -23,7 +23,7 @@ import { PCComponent } from './pc/pc.component';
 import { PlaystationComponent } from './playstation/playstation.component';
 import { XboxComponent } from './xbox/xbox.component';
 import { MobileComponent } from './mobile/mobile.component';
-import { UserComponent } from './user/user.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -47,7 +47,6 @@ export const firebaseConfig = {
     PlaystationComponent,
     XboxComponent,
     MobileComponent,
-    UserComponent
   ],
   imports: [
     BrowserModule,
