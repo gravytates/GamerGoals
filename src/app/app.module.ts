@@ -15,6 +15,11 @@ import { NewProjectComponent } from './new-project/new-project.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
 import { GenrePipe } from './genre.pipe';
+import { PlatformPipe } from './platform.pipe';
+import { PCComponent } from './pc/pc.component';
+import { PlaystationComponent } from './playstation/playstation.component';
+import { XboxComponent } from './xbox/xbox.component';
+import { MobileComponent } from './mobile/mobile.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +37,12 @@ export const firebaseConfig = {
     NewProjectComponent,
     AdminComponent,
     EditProjectComponent,
-    GenrePipe
+    GenrePipe,
+    PlatformPipe,
+    PCComponent,
+    PlaystationComponent,
+    XboxComponent,
+    MobileComponent
   ],
   imports: [
     BrowserModule,

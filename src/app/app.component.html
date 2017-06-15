@@ -1,7 +1,21 @@
 <div id="body">
   <a routerLink=""><div class="jumbotron">
-  <h1>{{title}}</h1>
+    <h1>{{title}}</h1>
   </div></a>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLink="">Home</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="pc">PC</a></li>
+        <li><a routerLink="playstation">PlayStation</a></li>
+        <li><a routerLink="xbox">X-Box</a></li>
+        <li><a routerLink="mobile">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container">
     <router-outlet></router-outlet>
   </div>
