@@ -4,43 +4,43 @@
   <div>
     <label>Project Title:</label>
     <br>
-    <input [(ngModel)]="selectedProject.title">
+    <input class="form-control" [(ngModel)]="selectedProject.title">
   </div>
 
   <div>
     <label>Project Author:</label>
     <br>
-    <input [(ngModel)]="selectedProject.author">
+    <input class="form-control" [(ngModel)]="selectedProject.author">
   </div>
 
   <div>
-    <label>Project Description:</label>
+    <label>Project Snippet:</label>
     <br>
-    <textarea [(ngModel)]="selectedProject.description"></textarea>
+    <textarea class="form-control" [(ngModel)]="selectedProject.description"></textarea>
   </div>
 
   <div>
     <label>Project Minimum Goal:</label>
     <br>
-    <input type="number" [(ngModel)]="selectedProject.minimumGoal">
+    <input class="form-control" type="number" [(ngModel)]="selectedProject.minimumGoal">
   </div>
 
   <div>
     <label>Current Amount Donated:</label>
     <br>
-    <input type="number" [(ngModel)]="selectedProject.currentAmount">
+    <input class="form-control" type="number" [(ngModel)]="selectedProject.currentAmount">
   </div>
 
   <div>
     <label>Project Goal Use:</label>
     <br>
-    <textarea [(ngModel)]="selectedProject.goalUse"></textarea>
+    <textarea class="form-control" [(ngModel)]="selectedProject.goalUse"></textarea>
   </div>
 
   <div>
     <label>Project Rewards:</label>
     <br>
-    <input [(ngModel)]="selectedProject.rewards">
+    <input class="form-control" [(ngModel)]="selectedProject.rewards">
   </div>
 
   <div class="form-group">
@@ -68,10 +68,9 @@
   <div>
     <label>Project Image URL:</label>
     <br>
-    <input [(ngModel)]="selectedProject.image">
+    <input class="form-control" [(ngModel)]="selectedProject.image">
   </div>
-
-
+  <br>
   <button class="btn btn-success" (click)="beginUpdatingProject(selectedProject)">Edit</button>
   <hr>
   <button class="btn btn-danger" (click)="beginDeletingProject(selectedProject)">Delete</button>
