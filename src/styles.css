@@ -30,3 +30,8 @@ img {
 .click {
    cursor: pointer;
 }
+
+.panel-heading {
+  background: rgb(245,26,106);
+  color: yellow;
+}
