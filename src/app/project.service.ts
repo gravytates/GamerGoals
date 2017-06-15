@@ -45,4 +45,10 @@ export class ProjectService {
   }
 
 
+
+  deleteProject(localProject){
+    var firebaseProjectToDelete = this.getProjectById(localProject.$key);
+    firebaseProjectToDelete.remove();
+  }
+
 }

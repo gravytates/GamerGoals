@@ -76,6 +76,8 @@
 
 
   <button class="btn btn-success" (click)="beginUpdatingProject(selectedProject)">Edit</button>
+  <hr>
+  <button (click)="beginDeletingProject(selectedProject)">Delete</button>
 </div>
 <div *ngIf="formButton">
   <button class="btn btn-default" (click)="showForm()">Edit Project</button>

@@ -32,4 +32,10 @@ export class EditProjectComponent implements OnInit {
     this.editForm = null;
     this.formButton = true;
   }
+
+  beginDeletingProject(project){
+  if(confirm("Sure yeah?")){
+    this.projectService.deleteProject(project);
+  }
+}
 }
