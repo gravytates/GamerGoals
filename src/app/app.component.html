@@ -1,6 +1,7 @@
 <div id="body">
   <a routerLink=""><div class="jumbotron">
     <h1>{{title}}</h1>
+      <div id="adminName" *ngIf="(user | async)?.email != undefined"> Welcome, {{ (user | async)?.email}} </div>
   </div></a>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -22,6 +23,13 @@
 </div>
 <footer class="footer">
   <div class="container">
-    <a class="text-muted" routerLink="admin">Admin</a>
+    <!-- <a class="text-muted" routerLink="admin">Admin</a> -->
+  <label>Email</label>
+  <input #email>
+  <label>Password</label>
+  <input type="password" #password>
+
+  <button (click)="login(email.value, password.value)" routerLink="admin">Admin Login</button>
+  <button (click)="logout()" routerLink="">Admin Logout</button>
   </div>
 </footer>

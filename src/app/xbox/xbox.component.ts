@@ -31,6 +31,10 @@ export class XboxComponent implements OnInit {
     this.filterBy = menuOption;
   }
 
+  // xboxBtn(){
+  //   filterPlat: string = "XBox"
+  // }
+
   filterPlat: string = "XBox"
 
 }
