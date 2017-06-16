@@ -4,6 +4,8 @@
 
 [Visit the site!](https://gamer-goals.firebaseapp.com)
 
+
+A website to fund indie and other start-up video games! Be able to add your own project, or donate to existing projects! Site Admins can log in to edit and delete projects with firebase's user authentication platform. Visit individual console/hardware pages to see their specific projects, or enhance your search to see only specific genres that interest you.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
 
 ## By Grady Shelton and Nicole Santamaria
@@ -17,6 +19,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * As a user, I want to click a button or fill out a form to fund a project.
 * As a user, I want the option to post my own project that seeks funding.
 * As an administrator, I want to add, update, or delete projects as necessary. (User authentication is required).
+* As an administrator, I want to be able to securely sign in and out of my admin account.
 * As a user, I want to select a platform to view a page containing all projects in that platform.
 
 ## Prerequisites
@@ -26,7 +29,7 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [AngularCLI](https://cli.angular.io/)
-* [(src/assets/images/firebase.png)](https://firebase.google.com/)
+* ![firebase logo](src/assets/images/firebase.png)
 
 ## Installation
 
