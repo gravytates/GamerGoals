@@ -29,7 +29,7 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [AngularCLI](https://cli.angular.io/)
-* ![firebase logo](src/assets/images/firebase.png)
+*![firebase logo](src/assets/images/firebase.png)
 
 ## Installation
 
